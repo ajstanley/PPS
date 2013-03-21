@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Slideshow</title>
+
+    <link rel="stylesheet" href="../css/slideshow.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
+    <script src="js/slides.min.jquery.js"></script>
+    <script src="../js/AddPics.js" type="text/javascript"></script>
+
+    <script>
+      function getURLParameter(name) {
+        return decodeURI(
+        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+      );
+      }
+
+
+      $(document).ready(function () {
+        getPics(getURLParameter('year'));
+      });
+
+    </script>
+  </head>
+  <body>
+
+    <div id="container">
+      <div id="example">
+        <div id="slides">
+          <div class="slides_container">
+          </div>
+          <a href="#" class="prev"><img src="img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+          <a href="#" class="next"><img src="img/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

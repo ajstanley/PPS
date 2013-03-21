@@ -1,0 +1,22 @@
+/* 
+    Document   : schedule.css
+    Created on : Dec 12, 2012, 2:27:20 AM
+    Author     : astanley
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+.time{
+  width: 20%
+}
+.coach{
+  width: 30%
+}
